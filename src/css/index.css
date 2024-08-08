@@ -1,0 +1,11 @@
+header div h1 {
+    font-family: "Long Cang", cursive;
+}
+
+.section1 {
+    background-image: url(/src/img/frame.jpg);
+}
+
+.team {
+    background: url(../img/team.jpg) center/cover;
+}
