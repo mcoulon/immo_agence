@@ -1,28 +1,240 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ledor</title>
+    <script
+      src="https://kit.fontawesome.com/83f4286022.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Long+Cang|Montserrat:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/index.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1 class="text-3xl font-bold text-red-300">Hello world!</h1>
-    <div class="flex flex-col-reverse space-y-5 inline-block">
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
-        impedit officia voluptatibus doloremque quae vel laudantium iste
-        mollitia, laborum adipisci, vitae id optio consequuntur eum consequatur
-        molestiae ex rerum quisquam? Illum magni ipsa qui maiores temporibus
-        nulla sapiente illo commodi aliquam vero molestiae ea repellat veritatis
-        aliquid maxime, rem nisi distinctio a. Accusamus quidem voluptas
-        laboriosam ratione alias et tempore? Doloribus iusto magnam, voluptate
-        quibusdam, iste sunt aperiam distinctio qui deserunt laudantium nulla
-        aut quas atque vero dolor a fugiat dolorum sapiente expedita eos rem
-        ratione quae. Nobis, fugiat consequatur.
+
+  <body class="font-montserrat min-h-screen">
+    <header class="flex bg-[#333] p-[1.23rem] justify-between">
+      <div class="flex">
+        <i class="fas fa-crown text-yellow-400 pt-4"></i>
+        <h1 class="text-white pt-1 pl-1 text-5xl">Ledor</h1>
       </div>
-      <div class="bg-slate-400 p-5 rounded-lg max-w-max">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <nav class="p-4">
+        <ul class="list-none flex">
+          <li>
+            <a
+              class="text-white p-4 hover:text-yellow-400 hover:underline"
+              href="#offres"
+              >Nos offres</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white p-4 hover:text-yellow-400 hover:underline"
+              href="#equipe"
+              >Notre equipe</a
+            >
+          </li>
+          <li>
+            <a
+              class="text-white p-4 hover:text-yellow-400 hover:underline"
+              href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section1 bg-cover bg-center text-white py-40">
+      <div class="m-auto text-center w-[45%]">
+        <h2 class="text-5xl font-bold mb-8">
+          Un
+          <span class="text-yellow-400 font-normal">immobilier</span>
+          d'exception pour des clients d'exception
+        </h2>
+        <p class="text-2xl">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nam
+          tempore eligendi laborum molestiae, enim ipsa ex quasi architecto
+          veritatis dolores optio sequi id inventore, voluptatibus magnam
+          aspernatur fugit velit.
+        </p>
       </div>
-    </div>
+    </section>
+    <section class="bg-[#eeeeee]">
+      <h3 class="text-3xl font-normal p-12" id="offres">
+        Nos dernières offres
+      </h3>
+      <div class="flex flex-row justify-around">
+        <div class="w-[30%]">
+          <img
+            src="./src/img/house-1.jpg"
+            alt="Interieur d'une maison"
+            class="w-full"
+          />
+          <div class="text-center my-4">
+            <p>Appartement - Paris 75007</p>
+            <p>11 chambres 450 m2</p>
+            <hr class="w-12 h-0.5 bg-black mx-auto my-2" />
+            <p>3 900 000 € - $4 200 000</p>
+          </div>
+        </div>
+        <div class="w-[30%]">
+          <img
+            class="w-full"
+            src="/src/img/house-2.jpg"
+            alt="Interieur d'une maison"
+          />
+          <div class="text-center m-auto w-auto p-4">
+            <p class="p-2">Appartement - Paris 75001</p>
+            <p class="p-2">5 chambres 233 m2</p>
+            <div class="w-12 h-1 bg-black m-auto"></div>
+            <p class="p-2">3 900 000 € - $4 200 000</p>
+          </div>
+        </div>
+        <div class="w-[30%]">
+          <img
+            src="/src/img/house-3.jpg"
+            class="w-full"
+            alt="Interieur d'une maison"
+          />
+          <div class="text-center my-4">
+            <p class="p-2">Appartement - Paris 75001</p>
+            <p class="p-2">5 chambres 233 m2</p>
+            <div class="w-12 h-0.5 bg-black m-auto"></div>
+            <p class="p-2">3 900 000 € - $4 200 000</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex bg-[#333] flex-row min-h-[37.5rem]">
+      <div class="team flex-1"></div>
+      <div class="flex-1 py-40 px-20 text-white">
+        <h3 class="text-4xl pb-0.5" id="equipe">
+          Une équipe de <span class="text-yellow-400">professionnels</span> avec
+          plus de 10 ans d'expérience
+        </h3>
+        <p class="text-2xl">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi atque
+          perferendis mollitia molestiae fugiat modi eveniet commodi ratione
+          deleniti natus dolorum quaerat labore maxime, iste omnis qui quis nam
+          quam.
+        </p>
+      </div>
+    </section>
+    <section class="py-40 bg-[#eeeeee] flex flex-col items-center">
+      <h3 class="text-2xl font-normal p-12 self-start">
+        Ecoutez ce qu'ils pensent de nous
+      </h3>
+      <div
+        class="flex w-[90%] justify-between bg-white rounded-lg min-h-[10rem] my-4"
+      >
+        <div class="flex flex-col justify-center items-end px-12">
+          <p>
+            <i class="fas fa-quote-left"></i>Lorem imsum, dolor sit amet
+            consectetur adipisiing elit. Velit, aperiam.<i
+              class="fas fa-quote-right"
+            ></i>
+          </p>
+        </div>
+        <div class="text-center">
+          <img
+            class="w-[2.5rem] h-[2.5rem] rounded-[50%]"
+            src="./src/img/person-1.jpg"
+            alt=""
+          />
+          <p>Jean Dupont</p>
+          <p>CEO Etoile</p>
+        </div>
+      </div>
+      <div
+        class="flex w-[90%] justify-between bg-white rounded-lg min-h-[10rem] my-4"
+      >
+        <div class="flex flex-col justify-center items-start px-12">
+          <img
+            class="w-[2.5rem] h-[2.5rem] rounded-[50%]"
+            src="./src/img/person-2.jpg"
+            alt=""
+          />
+          <p>Arthur Lac</p>
+          <p>Developpeur web</p>
+        </div>
+        <div class="flex flex-col justify-center items-end px-12">
+          <p>
+            <i class="fas fa-quote-left"></i> Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Recusandae illo quam saepe veritatis
+            omnis quaerat ullam animi. Alias excepturi velit maiores, adipisci
+            incidunt labore voluptatum quod, autem, architecto cupiditate id
+            tempore soluta ullam quia recusandae? Culpa, eius, voluptates
+            corrupti deleniti incidunt omnis error nulla perferendis blanditiis
+            quasi, perspiciatis iure vel?<i class="fas fa-quote-right"></i>
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex w-[90%] justify-between bg-white rounded-lg min-h-[10rem] my-4"
+      >
+        <div class="flex flex-col justify-center items-end px-12">
+          <p>
+            <i class="fas fa-quote-left"></i> Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Nam exercitationem aut, reiciendis
+            dolor, dolorem eius animi atque maxime deleniti distinctio ex
+            inventore rem cupiditate nostrum a omnis, illum quasi delectus.<i
+              class="fas fa-quote-right"
+            ></i>
+          </p>
+        </div>
+        <div class="text-center">
+          <img
+            class="w-[2.5rem] h-[2.5rem] rounded-[50%]"
+            src="./src/img/person-3.jpg"
+            alt=""
+          />
+          <p>Julie Roux</p>
+          <p>Developpeuse web</p>
+        </div>
+      </div>
+    </section>
+    <section class="section5 flex justify-center bg-black text-white py-52">
+      <div class="w-1/2">
+        <h3 class="font-normal text-4xl pb-8" id="contact">
+          Pour nous <span class="goldentext">contacter</span>
+        </h3>
+        <form class="flex flex-col w-full" action="#">
+          <input
+            class="block bg-[#333] text-white p-8 border-none opacity-40 placeholder:text-[#eeeeee]"
+            type="text"
+            name="Nom"
+            id="nom"
+            placeholder="Nom"
+          />
+          <input
+            class="block bg-[#333] text-white p-8 border-none opacity-40 placeholder:text-[#eeeeee]"
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Email"
+          />
+          <input
+            class="block bg-[#333] text-white p-8 border-none opacity-40 placeholder:text-[#eeeeee]"
+            type="text"
+            name="Message"
+            id="message"
+            placeholder="Votre message ..."
+          />
+          <button
+            class="self-center mt-16 bg-yellow-400 text-white border-none text-2xl font-bold rounded-[4rem] px-6 py-8 hover:bg-[#333] hover:text-yellow-400"
+            type="submit"
+          >
+            Soumettre
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="text-center p-8 bg-[#333] text-white">
+      <p>Copyright &#9400; 2019</p>
+    </footer>
   </body>
 </html>
