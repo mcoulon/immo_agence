@@ -3,7 +3,7 @@ header div h1 {
 }
 
 .section1 {
-    background-image: url(/src/img/frame.jpg);
+    background-image: url(./src/img/frame.jpg);
 }
 
 .team {
